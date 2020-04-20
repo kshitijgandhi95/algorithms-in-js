@@ -25,15 +25,15 @@
 
 // This question is intentionally left slightly vague. Clarify the question by trying out a few cases in the “See Expected Output” section.
 
-module.exports = { 
- //param A : array of integers
- //param B : array of integers
- //return an integer
-	coverPoints : function(A, B){
+module.exports = {
+    //param A : array of integers
+    //param B : array of integers
+    //return an integer
+    coverPoints: function (A, B) {
         let minSteps = 0;
-        for (let i=1;i<A.length;i++) {
-            minSteps += Math.max (Math.abs (A[i]-A[i-1]), Math.abs (B[i]-B[i-1]));
+        for (let i = 1; i < A.length; i++) {
+            minSteps += Math.max(Math.abs(A[i] - A[i - 1]), Math.abs(B[i] - B[i - 1]));
         }
         return minSteps;
-	}
+    }
 };
