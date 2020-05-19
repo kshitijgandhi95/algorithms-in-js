@@ -17,3 +17,6 @@
     Math.max, Math.min and Math.abs   
 ## divison
     Divison in math returns decimal number      
+
+# Quick revision
+   k-smallest - kth smallest element
