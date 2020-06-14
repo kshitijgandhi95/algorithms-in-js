@@ -49,6 +49,7 @@ class LinkedList {
         }
         if (!node.next) {
             this.head = null;
+            return;
         }
         while (!node.next) {
             node = node.next;
@@ -81,7 +82,7 @@ class LinkedList {
         }
     }
     insertAfterVal (nodeVal, val) {
-        let node = new Node ();
+        let node = new Node (val);
         if (!this.head) {
             return;
         }
@@ -95,4 +96,28 @@ class LinkedList {
             head = head.next;
         }
     }
+    printLinkedList () {
+        let head = this.head;
+        while (head) {
+            console.log (head.val);
+            head = head.next;
+        }
+        return;
+    }
 }
+
+// let ll = new LinkedList();
+// ll.addNodeAtLast(20);
+// ll.adNodeAtFront (10);
+// ll.addNodeAtLast(30);
+// ll.printLinkedList();
+// ll.removeNodeFromFront();
+// ll.removeNodeWithVal(30);
+// ll.removeNodeWithVal(60);
+// ll.printLinkedList();
+// ll.insertAfterVal (20, 70);
+// ll.printLinkedList();
+// ll.removeNodeFromLast();
+// ll.removeNodeFromLast();
+// ll.removeNodeFromLast();
+// ll.printLinkedList();
