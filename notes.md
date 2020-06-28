@@ -20,3 +20,14 @@
 
 # Quick revision
    k-smallest - kth smallest element
+
+# Data Structure
+## Heaps 
+   [InterviewBit link](https://www.interviewbit.com/tutorial/heap-sort-algorithm/)
+   [Deletion from BST](https://www.techiedelight.com/deletion-from-bst/)
+   In case of deleting node - there might be chance that in-order predecessor can have left subtree
+## Hashing
+   [InterviewBit link](https://www.interviewbit.com/tutorial/hash-functions/)
+   [CMU link](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Hashing/hashing.html)   
+
+# Algorithms
